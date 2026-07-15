@@ -1,10 +1,9 @@
-/* --- BASIC SETUP --- */
+/*  BASIC SETUP  */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 html,
 body {
     background-color: #fff;
@@ -15,14 +14,12 @@ body {
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
 }
-
-/* --- REUSABLE COMPONENTS --- */
+/*  REUSABLE COMPONENTS  */
 .row {
     max-width: 1140px;
     margin: 0 auto;
     padding: 0 20px;
 }
-
 h1,
 h2,
 h3 {
@@ -38,7 +35,6 @@ h1 {
     font-size: 240%;
     word-spacing: 4px;
 }
-
 h2 {
     font-size: 180%;
     word-spacing: 2px;
@@ -50,9 +46,10 @@ h2 {
 h2:after {
     display: block;
     height: 2px;
+
     background-color: #e67e22;
     content: " ";
-    width: 100px;
+width: 100px;
     margin: 30px auto 0 auto;
 }
 
@@ -71,7 +68,6 @@ h3 {
     border-radius: 200px;
     transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
-
 .btn-full:link,
 .btn-full:visited {
     background-color: #e67e22;
@@ -95,22 +91,21 @@ h3 {
 .btn-full:active {
     border: 1px solid #cf6d17;
 }
-
 .btn-ghost:hover,
 .btn-ghost:active {
     border: 1px solid #cf6d17;
     color: #fff;
 }
-
-/* ICONS */
+/* ICONS  width and color */
 .icon-small {
-    color: #e67e22;
+color: #e67e22;
+    
     margin-right: 10px;
     width: 20px;
     text-align: center;
 }
 
-/* --- SECTION 1: HERO --- */
+/*  SECTION 1. HERO desine hight 100vh  */
 .hero-section {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1493770348161-369560ae357d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
     background-size: cover;
@@ -126,13 +121,12 @@ nav {
     align-items: center;
     padding: 20px 40px;
 }
-
+/* here set logo img  */
 .logo-img {
     height: 100px;
     width: auto;
     border-radius: 50%;
 }
-
 .main-nav {
     list-style: none;
     display: flex;
@@ -161,12 +155,11 @@ nav {
     padding-left: 20px;
 }
 
-/* --- SECTION 2: HOW IT WORKS --- */
+/* SECTION 2: HOW IT WORKS */
 .section-steps {
     background-color: #f4f4f4;
     padding: 50px 0;
 }
-
 .steps-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -177,7 +170,6 @@ nav {
 .steps-left {
     text-align: right;
 }
-
 .app-screen {
     width: 40%;
     min-width: 200px;
@@ -192,7 +184,6 @@ nav {
     margin-bottom: 30px;
     align-items: center;
 }
-
 .work-step div {
     color: #e67e22;
     border: 2px solid #e67e22;
@@ -212,7 +203,7 @@ nav {
     margin-right: 15px;
 }
 
-/* --- SECTION 3: CITIES --- */
+/*  SECTION 3: CITIES  */
 .section-cities {
     padding: 50px 0;
 }
@@ -241,29 +232,27 @@ nav {
     color: #e67e22;
     text-decoration: none;
 }
-
-/* --- SECTION 4: TESTIMONIALS --- */
+/* SECTION 4: TESTIMONIALS  */
 .section-testimonials {
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
     background-size: cover;
     color: #fff;
     padding: 60px 0;
 }
-
 .testimonials-grid {
     display: grid;
+
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
 }
-
 blockquote {
     padding: 2%;
     font-style: italic;
     line-height: 145%;
-    position: relative;
+
+position: relative;
     margin-top: 40px;
 }
-
 blockquote:before {
     content: "\201C";
     font-size: 400%;
@@ -272,7 +261,6 @@ blockquote:before {
     top: -5px;
     left: -5px;
 }
-
 cite {
     font-size: 90%;
     margin-top: 25px;
@@ -280,13 +268,11 @@ cite {
     align-items: center;
     gap: 15px;
 }
-
 cite img {
     height: 45px;
     border-radius: 50%;
 }
-
-/* --- SECTION 5: PRICING --- */
+/*  SECTION 5.  PRICING  */
 .section-pricing {
     background-color: #4f4545;
     padding: 60px 0;
@@ -295,7 +281,6 @@ cite img {
     color:white;
     font-weight:350;
 }
-
 .pricing-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -309,33 +294,27 @@ cite img {
     box-shadow: 0 2px 2px #efefef;
     transition: transform 0.3s;
 }
-
 .plan-box:hover {
     transform: scale(1.03);
 }
-
 .plan-box div {
     padding: 25px;
     border-bottom: 1px solid #e8e8e8;
 }
-
 .plan-box div:last-child {
     border: 0;
     text-align: center;
 }
-
 .plan-price {
     font-size: 300%;
     margin-bottom: 10px;
     font-weight: 100;
     color: #e67e22;
 }
-
 .plan-price span {
     font-size: 30%;
     font-weight: 300;
 }
-
 .plan-price-meal {
     font-size: 80%;
 }
@@ -348,13 +327,12 @@ cite img {
     padding: 5px 0;
 }
 
-/* --- SECTION 6: FOOTER --- */
+/*  SECTION 6: FOOTER  */
 footer {
     background-color: #212222;
     padding: 40px 0;
     font-size: 80%;
 }
-
 .footer-grid {
     display: flex;
     justify-content: space-between;
@@ -368,7 +346,6 @@ footer {
     display: flex;
     gap: 20px;
 }
-
 .footer-nav a,
 .social-links a {
     color: #888;
@@ -390,11 +367,8 @@ footer {
     text-align: center;
     margin-top: 20px;
 }
-
 /*  
-/* --- RESPONSIVE MEDIA QUERIES --- */
-/* 
-
+/*  RESPONSIVE MEDIA QUERIES  */
 /* TABLET (≤834px) */
 @media (max-width: 834px) {
 
@@ -411,7 +385,6 @@ footer {
     .app-screen {
         width: 70%;
     }
-
     .hero-text-box h1 {
         font-size: 200%;
     }
@@ -419,12 +392,12 @@ footer {
 /* MOBILE (≤390px / General Mobile ≤500px) */
 @media (max-width: 500px) {
     nav {
-        flex-direction: column;
+flex-direction: column;
         gap: 15px;
     }
-
     .main-nav {
-        flex-direction: column;
+flex-direction: column;
+        
         align-items: center;
         gap: 10px;
     }
@@ -433,12 +406,10 @@ footer {
         font-size: 160%;
         text-align: center;
     }
-
     .hero-text-box {
         text-align: center;
         padding: 0;
     }
-
     .btn:link,
     .btn:visited {
         display: block;
@@ -458,18 +429,16 @@ footer {
     .work-step {
         text-align: left;
     }
-
     .cities-grid,
     .pricing-grid,
     .testimonials-grid {
         grid-template-columns: 1fr;
     }
-
     .footer-grid {
         flex-direction: column;
         gap: 20px;
     }
-
+/* footer navigation  */
     .footer-nav ul {
         flex-direction: column;
         align-items: center;
